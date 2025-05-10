@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calci</title>
+    <link rel="stylesheet" href="./calci.css">
+</head>
+<body>
+    <table border="solid", align="center" cellspacing="3">
+        <tr>
+        <td colspan="5", align="right", class="x", id="disp">100</td>
+        </tr>
+        <tr>
+        <td id="k"><input type="button" value="ON" onclick="display(ON)"></td>
+        <td id="o"><input type="button" value="MC" onclick="display(MC)"></td>
+        <td id="o"><input type="button" value="MR" onclick="display(MR)"></td>
+        <td id="u"><input type="button" value="M-" onclick="display(M-)"></td>
+        <td id="o"><input type="button" value="M+" onclick="display(M+)"></td> 
+        </tr>  
+        <tr>
+        <td id="o"><input type="button" value="OFF" onclick="display(OFF)"></td>
+        <td id="o"><input type="button" value="%" onclick="display(%)"></td>
+        <td id="o"><input type="button" value="√" onclick="display(√)></td>
+        <td id="u"><input type="button" value="+/_" onclick="display(+/_)></td>
+        <td id="o"><input type="button" value="AC" onclick="display(AC)></td>
+        </tr>
+        <tr class="p">
+        <td><input type="button" value="7" onclick="display(7)"></td>
+        <td><input type="button" value="8" onclick="display(8)"</td>
+        <td><input type="button" value="9" onclick="display(9)"></td>
+        <td id="u"><input type="button" value="*" onclick="display(*)"></td>
+        <td><input type="button" value="CE" onclick="display(CE)"></td>
+        </tr>
+        <tr class="p">
+        <td><input type="button" value="4" onclick="display(4)"></td>
+        <td><input type="button" value="5" onclick="display(5)"></td>
+        <td><input type="button" value="6" onclick="display(6)"></td>
+        <td id="u"><input type="button" value="-" onclick="display(-)"></td>
+        <td><input type="button" value="÷" onclick="display(÷)"></td>
+        </tr>
+        <tr class="p">
+        <td><input type="button" value="1" onclick="display(1)"></td>
+        <td><input type="button" value="2" onclick="display(2)"></td>
+        <td><input type="button" value="3" onclick="display(3)"></td>
+        <td id="u" rowspan="2"><input type="button" value="+" onclick="display(+)"></td>
+        <td id="l" rowspan="2"><input type="button" value="=" onclick="display(=)"></td>
+        </tr>
+        <tr class="p">
+        <td colspan="2"><input type="button" value="0" onclick="display(0)"></td>
+        <td><input type="button" value="." onclick="display(.)"></td>
+        </tr>
+    </table>
+<script src="./calci.js"></script>
+</body>
+</html>
